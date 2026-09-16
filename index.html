@@ -66,8 +66,8 @@
                 <p class="hero-role">Analista de Testes Sênior | QA</p>
 
                 <p class="hero-description">
-                    Transformo requisitos em cenários, valido o que importa e busco
-                    sempre produtos mais estáveis e confiáveis.
+                    Qualidade de software com experiência em ERP, CRM e regras fiscais,
+                    evoluindo sempre em automação, performance e IA aplicada a testes.
                 </p>
 
                 <div class="hero-buttons">
@@ -91,64 +91,87 @@
                 <svg class="blob-line blob-line-2" viewBox="0 0 400 400"><path d="M190 30c86-8 170 48 178 132 8 86-54 172-138 196-82 24-170-22-196-96C8 186 40 96 92 58c28-20 60-26 98-28z"/></svg>
 
                 <div class="hero-photo">
-                    <!-- Ilustração em tons de cinza: mesa com notebook, caneca e celular -->
+                    <!-- Ilustração: painel de testes com checklist, busca de bug e métricas -->
                     <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
                         <defs>
-                            <radialGradient id="luz" cx="35%" cy="25%" r="80%">
-                                <stop offset="0" stop-color="#6d6d72"/>
-                                <stop offset="1" stop-color="#1b1b1e"/>
+                            <radialGradient id="heroBg" cx="40%" cy="35%" r="80%">
+                                <stop offset="0" stop-color="#231a3d"/>
+                                <stop offset=".6" stop-color="#11121c"/>
+                                <stop offset="1" stop-color="#0a0c12"/>
                             </radialGradient>
-                            <linearGradient id="caneca" x1="0" x2="1">
-                                <stop offset="0" stop-color="#101012"/>
-                                <stop offset=".45" stop-color="#2e2e33"/>
-                                <stop offset="1" stop-color="#0c0c0e"/>
+                            <pattern id="heroDots" width="16" height="16" patternUnits="userSpaceOnUse">
+                                <circle cx="2" cy="2" r="1" fill="#2c3140"/>
+                            </pattern>
+                            <linearGradient id="heroBars" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#a7e8c4"/>
+                                <stop offset="1" stop-color="#a7e8c4" stop-opacity=".25"/>
                             </linearGradient>
-                            <linearGradient id="tela" x1="0" y1="0" x2="1" y2="1">
-                                <stop offset="0" stop-color="#3a3a40"/>
-                                <stop offset="1" stop-color="#141417"/>
-                            </linearGradient>
-                            <filter id="grao"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .08 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
                         </defs>
 
-                        <rect width="400" height="400" fill="url(#luz)"/>
+                        <rect width="400" height="400" fill="url(#heroBg)"/>
+                        <rect width="400" height="400" fill="url(#heroDots)" opacity=".7"/>
 
-                        <!-- mesa -->
-                        <path d="M0 250 L400 205 L400 400 L0 400z" fill="#8a8a8e"/>
-                        <path d="M0 250 L400 205 L400 215 L0 262z" fill="#a3a3a7"/>
+                        <!-- janela principal: execução dos testes -->
+                        <g transform="translate(52 92)">
+                            <rect width="236" height="172" rx="12" fill="#11151e" stroke="#343a4a"/>
+                            <path d="M0 12a12 12 0 0 1 12-12h212a12 12 0 0 1 12 12v18H0z" fill="#171c27"/>
+                            <circle cx="16" cy="15" r="4" fill="#686773"/><circle cx="29" cy="15" r="4" fill="#686773"/><circle cx="42" cy="15" r="4" fill="#686773"/>
+                            <text x="60" y="19" fill="#a7a5b1" font-family="DM Mono, monospace" font-size="10">regressao.spec</text>
 
-                        <!-- notebook: tela -->
-                        <path d="M-10 60 L170 30 L190 210 L-10 240z" fill="url(#tela)"/>
-                        <path d="M0 72 L160 46 L176 198 L0 224z" fill="#1f1f23"/>
-                        <g stroke="#55555c" stroke-width="3" stroke-linecap="round">
-                            <path d="M14 90 L70 81"/><path d="M14 104 L110 88"/><path d="M26 118 L96 107"/>
-                            <path d="M26 132 L130 115"/><path d="M14 146 L80 136"/><path d="M26 160 L120 145"/>
-                        </g>
-                        <!-- notebook: teclado -->
-                        <path d="M-20 244 L190 212 L250 300 L-20 350z" fill="#bdbdc1"/>
-                        <g fill="#8f8f94">
-                            <path d="M10 262 L170 238 L182 254 L14 280z"/>
-                            <path d="M16 290 L186 262 L198 280 L20 310z"/>
-                            <path d="M60 318 L150 302 L160 318 L66 334z"/>
-                        </g>
+                            <g font-family="DM Mono, monospace" font-size="11" fill="#f2f0f7">
+                                <circle cx="22" cy="54" r="7" fill="#a7e8c4"/><path d="M18.5 54l2.5 2.5 4.5-5" stroke="#0d1017" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <text x="38" y="58">login com MFA</text>
 
-                        <!-- caneca -->
-                        <ellipse cx="275" cy="262" rx="62" ry="16" fill="#000" opacity=".35"/>
-                        <path d="M212 110 L212 250 Q212 272 272 272 Q332 272 332 250 L332 110z" fill="url(#caneca)"/>
-                        <ellipse cx="272" cy="110" rx="60" ry="15" fill="#2a2a2f"/>
-                        <ellipse cx="272" cy="111" rx="52" ry="11" fill="#0a0a0b"/>
-                        <path d="M332 140 Q372 142 370 186 Q368 226 330 226" fill="none" stroke="#161618" stroke-width="14"/>
-                        <text x="236" y="168" fill="#d9d9dd" font-family="DM Mono, monospace" font-size="15">test</text>
-                        <text x="236" y="188" fill="#d9d9dd" font-family="DM Mono, monospace" font-size="15">validate</text>
-                        <text x="236" y="208" fill="#d9d9dd" font-family="DM Mono, monospace" font-size="15">improve</text>
+                                <circle cx="22" cy="82" r="7" fill="#a7e8c4"/><path d="M18.5 82l2.5 2.5 4.5-5" stroke="#0d1017" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <text x="38" y="86">POST /pedidos 201</text>
 
-                        <!-- celular -->
-                        <path d="M250 318 L372 292 L400 360 L278 392z" fill="#e4e4e7"/>
-                        <path d="M258 322 L366 299 L390 356 L282 382z" fill="#c9c9cd"/>
-                        <g stroke="#9c9ca1" stroke-width="3" stroke-linecap="round">
-                            <path d="M276 334 L340 320"/><path d="M282 348 L354 333"/><path d="M288 362 L330 353"/>
+                                <circle cx="22" cy="110" r="7" fill="#a7e8c4"/><path d="M18.5 110l2.5 2.5 4.5-5" stroke="#0d1017" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <text x="38" y="114">nota fiscal emitida</text>
+
+                                <circle cx="22" cy="138" r="7" fill="#b99cff"/><path d="M19 135l6 6M25 135l-6 6" stroke="#0d1017" stroke-width="2" stroke-linecap="round"/>
+                                <text x="38" y="142" fill="#b99cff">limite diário excedido</text>
+
+                            </g>
                         </g>
 
-                        <rect width="400" height="400" filter="url(#grao)"/>
+                        <!-- lupa sobre um bug -->
+                        <g transform="translate(296 104)">
+                            <circle r="40" fill="#0d1017" stroke="#b99cff" stroke-width="5"/>
+                            <path d="M28 28l30 30" stroke="#b99cff" stroke-width="10" stroke-linecap="round"/>
+                            <g fill="#a7e8c4">
+                                <ellipse cx="0" cy="4" rx="11" ry="15"/>
+                                <circle cx="0" cy="-15" r="7"/>
+                            </g>
+                            <g stroke="#a7e8c4" stroke-width="2.5" stroke-linecap="round" fill="none">
+                                <path d="M-11 -2l-11 -6M-11 6h-13M-11 14l-11 6M11 -2l11 -6M11 6h13M11 14l11 6M-4 -21l-5 -8M4 -21l5 -8"/>
+                            </g>
+                            <path d="M0 -9v28" stroke="#0d1017" stroke-width="2"/>
+                        </g>
+
+                        <!-- cartão de métricas -->
+                        <g transform="translate(108 278)">
+                            <rect width="176" height="80" rx="12" fill="#11151e" stroke="#343a4a"/>
+                            <text x="16" y="22" fill="#a7a5b1" font-family="DM Mono, monospace" font-size="10">release 4.2</text>
+                            <text x="16" y="48" fill="#f2f0f7" font-family="Inter, sans-serif" font-size="22" font-weight="600">96%</text>
+                            <text x="16" y="63" fill="#a7a5b1" font-family="Inter, sans-serif" font-size="9">casos aprovados</text>
+                            <g fill="url(#heroBars)">
+                                <rect x="104" y="44" width="10" height="24" rx="2"/>
+                                <rect x="119" y="32" width="10" height="36" rx="2"/>
+                                <rect x="134" y="38" width="10" height="30" rx="2"/>
+                                <rect x="149" y="20" width="10" height="48" rx="2"/>
+                            </g>
+                        </g>
+
+                        <!-- chip de API -->
+                        <g transform="translate(74 46)">
+                            <rect width="138" height="34" rx="17" fill="#16121f" stroke="#7f63bd"/>
+                            <circle cx="18" cy="17" r="5" fill="#a7e8c4"/>
+                            <text x="32" y="21" fill="#f2f0f7" font-family="DM Mono, monospace" font-size="11">200 OK · 184ms</text>
+                        </g>
+
+                        <!-- conectores -->
+                        <path d="M244 230 C 286 226, 300 190, 290 150" fill="none" stroke="#7f63bd" stroke-width="1.5" stroke-dasharray="4 5"/>
+                        <circle cx="244" cy="230" r="3.5" fill="#b99cff"/>
                     </svg>
                 </div>
 
@@ -423,10 +446,7 @@
 
                 <div class="section-title">
                     <h2>Projetos</h2>
-                    <p>
-                        Cada projeto é apresentado como uma investigação de QA: missão, heurística,
-                        cenários, evidência e resultado.
-                    </p>
+                    <p class="section-lead">Do estudo à prática: suítes automatizadas, testes de performance e assistentes de IA que desenvolvi para QA.</p>
                 </div>
 
                 <div class="filters" role="group" aria-label="Filtrar projetos">
@@ -446,8 +466,8 @@
                         </div>
                         <div class="project-body">
                             <h3>API de Pedidos | Cozinha Saudável</h3>
-                            <div class="tags"><span>Node.js</span><span>TypeScript</span><span>Mocha/Chai</span><span>Supertest</span></div>
-                            <p>Testes de API baseados no contrato OpenAPI, com heurística VADER.</p>
+                            <div class="tags"><span>Node.js</span><span>TypeScript</span><span>Mocha/Chai</span><span>Supertest</span><span>VADER</span><span>GitHub Actions</span></div>
+                            <p>Projeto de QA de API: 96 casos derivados do contrato OpenAPI pela heurística VADER, com matriz rastreável e 13 defeitos documentados. Suíte automatizada em Mocha, Chai e Supertest, com CI no GitHub Actions. Inclui a API sob teste, em Node.js e TypeScript.</p>
 
                             <div class="card-actions">
                                 <button class="investigate" type="button" aria-expanded="false" aria-controls="inv-cozinha">Abrir investigação</button>
@@ -459,9 +479,9 @@
                                 <dl>
                                     <dt>Missão</dt><dd>Validar a API de pedidos a partir do contrato OpenAPI.</dd>
                                     <dt>Heurística</dt><dd>VADER: verbos, autorização, dados, erros e responsividade.</dd>
-                                    <dt>Cenários</dt><dd>Fluxos de pedido com dados válidos e inválidos, respostas de erro e conformidade com o contrato.</dd>
-                                    <dt>Evidência</dt><dd>Suíte automatizada com Mocha e Supertest versionada no repositório.</dd>
-                                    <dt>Resultado</dt><dd>Cenários rastreáveis ao contrato e prontos para execução contínua.</dd>
+                                    <dt>Cenários</dt><dd>96 casos de teste derivados do contrato OpenAPI, organizados em matriz rastreável.</dd>
+                                    <dt>Evidência</dt><dd>Suíte automatizada em Mocha, Chai e Supertest, executada em CI no GitHub Actions.</dd>
+                                    <dt>Resultado</dt><dd>13 defeitos documentados e cenários rastreáveis ao contrato, com execução contínua a cada alteração.</dd>
                                 </dl>
                             </div>
                         </div>
@@ -475,11 +495,11 @@
                         <div class="project-body">
                             <h3>Brasil API | Testes</h3>
                             <div class="tags"><span>JavaScript</span><span>Mocha</span><span>Chai</span><span>Supertest</span><span>Ajv</span><span>Mochawesome</span><span>VADER</span></div>
-                            <p>Testes exploratórios e automatizados nos recursos críticos da Brasil API.</p>
+                            <p>Suíte de testes automatizados da BrasilAPI em Mocha, Chai e Supertest, produzida durante os testes do Assistente de Testes de API.</p>
 
                             <div class="card-actions">
                                 <button class="investigate" type="button" aria-expanded="false" aria-controls="inv-brasilapi">Abrir investigação</button>
-                                <a class="repo-link" href="https://github.com/pamelatf" target="_blank" rel="noopener">Repositório →</a>
+                                <a class="repo-link" href="https://github.com/pamelatf/brasil-api-tests" target="_blank" rel="noopener">Repositório →</a>
                             </div>
 
                             <div class="investigation" id="inv-brasilapi" hidden>
@@ -503,7 +523,7 @@
                         <div class="project-body">
                             <h3>Assistente de Testes de API</h3>
                             <div class="tags"><span>Claude</span><span>VADER</span><span>POISED</span><span>OpenAPI</span></div>
-                            <p>Assistente de IA no Claude que apoia a investigação de APIs REST.</p>
+                            <p>Assistente de IA para testes de API construído como Projeto no Claude, com as heurísticas VADER e POISED. Desafio #4 da Mentoria 2.0, Turma 4.</p>
 
                             <div class="card-actions">
                                 <button class="investigate" type="button" aria-expanded="false" aria-controls="inv-assistente">Abrir investigação</button>
@@ -531,7 +551,7 @@
                         <div class="project-body">
                             <h3>Banco API | Performance</h3>
                             <div class="tags"><span>k6</span><span>JavaScript</span></div>
-                            <p>Testes de performance de API com conceitos e métricas de desempenho.</p>
+                            <p>Testes de performance da API do Banco com k6 e JavaScript. Estrutura modular com cenários de carga, thresholds e checks, autenticação reutilizável, massa de dados em fixtures e relatório HTML via Web Dashboard do k6.</p>
 
                             <div class="card-actions">
                                 <button class="investigate" type="button" aria-expanded="false" aria-controls="inv-performance">Abrir investigação</button>
@@ -551,6 +571,34 @@
                         </div>
                     </article>
 
+                    <!-- Charter de Teste Exploratório -->
+                    <article class="project-card" data-tags="ia">
+                        <div class="project-cover">
+                            <img src="img/capa-charter-teste-exploratorio.webp" alt="Capa do projeto Charter de Teste Exploratório: skill de IA no Claude que gera charters com missão, riscos, cenários e heurísticas para sessões exploratórias baseadas em risco" width="1200" height="488" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Charter de Teste Exploratório</h3>
+                            <div class="tags"><span>Claude</span><span>Skill</span><span>SBTM</span><span>SFDPOT</span><span>Markdown</span></div>
+                            <p>Skill para o Claude que gera Charters de Teste Exploratório completos a partir do nome de uma funcionalidade, seguindo Session-Based Testing (SBTM) e testes baseados em risco.</p>
+
+                            <div class="card-actions">
+                                <button class="investigate" type="button" aria-expanded="false" aria-controls="inv-charter">Abrir investigação</button>
+                                <a class="repo-link" href="https://github.com/pamelatf/charter-teste-exploratorio" target="_blank" rel="noopener">Repositório →</a>
+                            </div>
+
+                            <div class="investigation" id="inv-charter" hidden>
+                                <p class="investigation-status">STATUS: <b>concluída</b></p>
+                                <dl>
+                                    <dt>Missão</dt><dd>Agilizar o planejamento de sessões exploratórias sem perder profundidade na análise de risco.</dd>
+                                    <dt>Heurística</dt><dd>SBTM, testes baseados em risco, SFDPOT, BVA, CRUD e Error Guessing.</dd>
+                                    <dt>Cenários</dt><dd>Cenários positivos, negativos e casos extremos gerados a partir do nome da funcionalidade.</dd>
+                                    <dt>Evidência</dt><dd>Charter em Markdown com riscos, perguntas investigativas e evidências recomendadas.</dd>
+                                    <dt>Resultado</dt><dd>Charter pronto para usar no Jira, Confluence, Notion ou TestRail, com sugestão de divisão da sessão em blocos de tempo.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+
                     <!-- Portfólio -->
                     <article class="project-card" data-tags="todos">
                         <div class="project-cover">
@@ -558,11 +606,23 @@
                         </div>
                         <div class="project-body">
                             <h3>Este portfólio</h3>
-                            <div class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></div>
-                            <p>Site pessoal em evolução. Em breve, mais projetos e conteúdos.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+                            <p>Portfólio pessoal de Analista de Testes | QA, com experiência profissional, habilidades, cursos e projetos de testes de API, performance, automação e IA aplicada à qualidade de software.</p>
 
                             <div class="card-actions">
+                                <button class="investigate" type="button" aria-expanded="false" aria-controls="inv-portfolio">Abrir investigação</button>
                                 <a class="repo-link" href="https://github.com/pamelatf/meu-portfolio" target="_blank" rel="noopener">Repositório →</a>
+                            </div>
+
+                            <div class="investigation" id="inv-portfolio" hidden>
+                                <p class="investigation-status">STATUS: <b>em evolução</b></p>
+                                <dl>
+                                    <dt>Missão</dt><dd>Reunir experiência, cursos e projetos de QA em um site próprio, fácil de navegar e compartilhar.</dd>
+                                    <dt>Técnica</dt><dd>HTML semântico, CSS responsivo e JavaScript simples, sem frameworks.</dd>
+                                    <dt>Cenários</dt><dd>Navegação no desktop e no celular, tema claro e escuro, filtros de projetos e leitura por teclado.</dd>
+                                    <dt>Evidência</dt><dd>Site publicado no GitHub Pages, com histórico de alterações no repositório.</dd>
+                                    <dt>Resultado</dt><dd>Portfólio atualizado a cada novo projeto ou curso concluído.</dd>
+                                </dl>
                             </div>
                         </div>
                     </article>

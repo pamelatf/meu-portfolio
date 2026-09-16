@@ -132,6 +132,10 @@ main {
     font-size: 15px;
 }
 
+.section-title .section-lead {
+    max-width: none;
+}
+
 .ui-icon {
     width: 26px;
     height: 26px;
@@ -608,6 +612,8 @@ main {
     margin-top: 12px;
     color: var(--text-soft);
     font-size: 14px;
+    line-height: 1.6;
+    min-height: 6.4em;
 }
 
 .card-actions {
@@ -1123,6 +1129,10 @@ footer a:hover {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-body > p {
+        min-height: 0;
     }
 
     .investigation dl {
