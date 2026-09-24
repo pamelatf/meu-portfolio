@@ -2,7 +2,7 @@
 
 Portfólio pessoal de **Pâmela Tábata Fagundes da Silva**, Analista de Testes Sênior com mais de 4 anos de experiência em Qualidade de Software, com atuação em sistemas ERP, CRM para o agronegócio e funcionalidades fiscais.
 
-**Acesse o site:** [pamelatf.github.io/pamelatfagundes](https://pamelatf.github.io/pamelatfagundes/)
+**Acesse o site:** [https://pamelatf.github.io/meu-portfolio/](https://pamelatf.github.io/meu-portfolio/))
 
 ---
 
